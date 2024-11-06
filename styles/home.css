@@ -1,0 +1,64 @@
+@import url('style.css');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    flex-grow: 1;
+    display: grid;
+    gap: 30px; 
+    grid-template-rows: 3fr 2fr;
+    height: 90%;
+    max-width: 1440px;
+}
+
+.top-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
+}
+
+.top-grid-item {
+    background-color: var(--color-surface);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 10px;
+}
+
+.bottom-grid-item {
+    background-color: var(--color-surface);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        min-height: 600px;
+    }
+
+    .top-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

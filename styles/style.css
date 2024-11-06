@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Base Colors */
+    --color-background: #121212;    /* Background - Deep Black */
+    --color-surface: #1E1E1E;       /* Surface - Dark Gray */
+    --color-overlay: #2A2A2A;       /* Overlay - Slightly Lighter Gray */
+    
+    /* Text Colors */
+    --color-text-primary: #E0E0E0;  /* Primary Text - Light Gray */
+    --color-text-secondary: #B3B3B3; /* Secondary Text - Medium Gray */
+    --color-text-accent: #BB86FC;    /* Accent Text - Light Purple */
+
+    /* Accent Colors */
+    --color-accent-primary: #BB86FC; /* Primary Accent - Purple */
+    --color-accent-secondary: #03DAC6; /* Secondary Accent - Teal */
+    
+    /* Borders/Dividers */
+    --color-border: #333333;         /* Border - Subtle Gray */
+
+    /* Shadows */
+    --shadow-elevation-low: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    --shadow-elevation-medium: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-elevation-high: 0px 8px 12px rgba(0, 0, 0, 0.4);
+}
